@@ -1,22 +1,22 @@
-echo Hello World
-mkdir new_dir
-rm new_dir
-cp sed.txt ../lorem-copy
-cp at.txt ../lorem-copy ; cp lorem.txt ../lorem-copy
-cat sed.txt
-cat at.txt cat lorem.txt
-head -3 sed.txt
-tail -3 sed.txt
-echo "Homo homini lupus." >> sed.txt
-tail -3 sed.txt
-sed -i 's/ET/et/g' at.txt
-whoami
-pwd
-find *.txt
-cat sed.txt | wc
-Find . -type f -name lorem*.* |WC -l
+echo Hello World print #Hello world
+mkdir new_dir #make new directory
+rm new_dir #Remove directory
+cp sed.txt ../lorem-copy #copy file in one directory back
+cp at.txt ../lorem-copy ; cp lorem.txt ../lorem-copy #copy files in one directory back
+cat sed.txt #show content
+cat at.txt cat lorem.txt #show content from 2 files
+head -3 sed.txt #Show the first 3 rows
+tail -3 sed.txt #Show the last 3 rows
+echo "Homo homini lupus." >> sed.txt #Add text to the end of the file
+tail -3 sed.txt #To check if it was added
+sed -i 's/ET/et/g' at.txt #Change 'ET' to 'et' in x file
+whoami #Check what computer we are into
+pwd #current directory
+find *.txt #finds files with x extension
+cat sed.txt | wc #to count the rows in x file with cat and wc 
+Find . -type f -name lorem*.* |WC -l #count the files that start with lorem in any directory
 
-
+#How to create variables
 read Name
 echo $Name
 mkdir $Name
